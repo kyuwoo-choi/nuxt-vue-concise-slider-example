@@ -1,6 +1,5 @@
 <template>
   <div class="carousel-wrapper">
-      <!-- Configuring slider components -->
     <client-only>
       <Slider :options="options">
         <SliderItem

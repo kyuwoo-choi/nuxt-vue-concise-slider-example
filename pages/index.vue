@@ -1,19 +1,39 @@
 <template>
-  <div>
-    carousel
+  <div class="carousel-wrapper">
+    <no-ssr>
+      <!-- Configuring slider components -->
+      <Slider :options="options">
+        <SliderItem
+          v-for="i in 5"
+          :key="i"
+          class="img-warpper"
+          style="width: 33.3%;"
+        >
+          <img :src="`https://picsum.photos/200/100?random=${i}`" />
+        </SliderItem>
+      </Slider>
+    </no-ssr>
   </div>
 </template>
 
 <script>
 export default {
-  components: {}
+  components: {},
+  data() {
+    return {
+      options: {
+        slidesToScroll: 3,
+        loop: true
+      }
+    }
+  }
 }
 </script>
 
 <style>
 .carousel-wrapper {
   padding: 40px;
-  height: 150px;
+  height: 180px;
 }
 .img-warpper img {
   margin: auto;

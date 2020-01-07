@@ -6,7 +6,7 @@
         <SliderItem
           v-for="i in 5"
           :key="i"
-          class="img-warpper"
+          class="img-wrapper"
           style="width: 33.3%;"
         >
           <img :src="`https://picsum.photos/200/100?random=${i}`" />
@@ -35,7 +35,7 @@ export default {
   padding: 40px;
   height: 180px;
 }
-.img-warpper img {
+.img-wrapper img {
   margin: auto;
   width: 200px;
   height: 100px;

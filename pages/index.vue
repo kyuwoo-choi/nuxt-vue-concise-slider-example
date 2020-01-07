@@ -1,7 +1,7 @@
 <template>
   <div class="carousel-wrapper">
-    <no-ssr>
       <!-- Configuring slider components -->
+    <client-only>
       <Slider :options="options">
         <SliderItem
           v-for="i in 5"
@@ -12,7 +12,7 @@
           <img :src="`https://picsum.photos/200/100?random=${i}`" />
         </SliderItem>
       </Slider>
-    </no-ssr>
+    </client-only>
   </div>
 </template>
 

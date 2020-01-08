@@ -22,7 +22,8 @@ export default {
     return {
       options: {
         slidesToScroll: 3,
-        loop: true
+        loop: true,
+        pagination: false
       }
     }
   }

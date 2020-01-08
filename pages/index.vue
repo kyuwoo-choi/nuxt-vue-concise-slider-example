@@ -8,7 +8,7 @@
           class="img-wrapper"
           style="width: 33.3%;"
         >
-          <img :src="`https://picsum.photos/200/100?random=${i}`" />
+          <img :src="`./${i}-200x100.jpg`" />
         </SliderItem>
       </Slider>
     </client-only>
